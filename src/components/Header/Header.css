@@ -1,0 +1,10 @@
+.logo {
+	width: 10rem;
+	height: 10rem;
+	background-image: url(./img/cream-logo.png);
+	background-size: contain;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
