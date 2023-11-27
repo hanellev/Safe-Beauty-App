@@ -6,7 +6,9 @@ export const HomePage = () => {
 	return (
 		<div className="container">
 			<Header />
-			<main></main>
+			<main>
+				<button className="upload">Upload picture</button>
+			</main>
 			<Footer />
 		</div>
 	);
