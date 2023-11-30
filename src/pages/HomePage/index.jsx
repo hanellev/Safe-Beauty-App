@@ -7,6 +7,9 @@ export const HomePage = () => {
 		<div className="container">
 			<Header />
 			<main>
+				<span>
+					<button className="take-a-pict">Take a picture</button>
+				</span>
 				<button className="upload">Upload picture</button>
 			</main>
 			<Footer />
