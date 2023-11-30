@@ -8,3 +8,35 @@
 body {
 	background-color: #f8fff8;
 }
+
+nav {
+	position: fixed;
+	bottom: 1rem;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+nav a {
+	color: #181818;
+	text-decoration: none;
+	margin: 0 5px;
+}
+
+nav span {
+	color: #181818;
+}
+
+nav a:active,
+nav a:focus,
+nav a:hover {
+	color: black;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+h1,
+h2,
+p {
+	color: #181818;
+}
