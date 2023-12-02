@@ -1,0 +1,22 @@
+.take-a-pict {
+	background-image: url(./img/camera-view5.svg);
+	background-size: contain;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	width: 10rem;
+	height: 10rem;
+	border: none;
+}
+
+.take-a-pict:hover {
+	font-size: medium;
+}
+
+img,
+video,
+button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
