@@ -33,14 +33,14 @@ input {
 }
 
 .webcam-window {
-	width: 20rem;
-	height: 20rem;
+	width: 40rem;
+	height: 40rem;
 	border-radius: 10px;
 }
 
 @media (max-width: 768px) {
 	.webcam-window {
-		max-width: 60vh;
-		max-height: 6Ovh;
+		max-width: 70%;
+		max-height: 40%;
 	}
 }
