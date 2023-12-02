@@ -14,9 +14,21 @@
 
 img,
 video,
-button {
+button,
+input {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 
+}
+
+.upload {
+	font-size: 12px;
+	color: #181818;
+	background-color: #67c975;
+	border: none;
+	border-radius: 10px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
 }

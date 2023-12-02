@@ -9,14 +9,18 @@ const CameraButton = () => {
     const pictureSrc = webcamRef.current.getScreenshot();
     setPicture(pictureSrc);
   }, [webcamRef, setPicture]);
+  const handleChange = (e) => {
+    setPicture(URL.createObjectURL(e.target.files[0]));
+  };
 
   return (
-    <span>
+    <span class="container">
       <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
       <button className="take-a-pict" onClick={capture}>
-        Take a picture
+        {picture ? 'RETAKE PICTURE' : 'TAKE PICTURE'}
       </button>
       {picture && <img src={picture} />}
+      <input type="file" onChange={handleChange} className="upload" />
     </span>
   );
 };

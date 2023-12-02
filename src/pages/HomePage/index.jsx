@@ -8,7 +8,6 @@ export const HomePage = () => {
     <div className="container">
       <Header />
       <CameraButton />
-      <button className="upload">Upload picture</button>
       <Footer />
     </div>
   );
