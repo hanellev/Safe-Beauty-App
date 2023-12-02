@@ -100,7 +100,11 @@ const CameraButton = () => {
 					audio={false}
 					ref={webcamRef}
 					screenshotFormat="image/jpeg"
-					videoConstraints={{ facingMode: 'environment' }}
+					videoConstraints={{
+						facingMode: 'environment',
+						width: '30%',
+						height: '30%',
+					}}
 				/>
 			)}
 			{picture ? (
