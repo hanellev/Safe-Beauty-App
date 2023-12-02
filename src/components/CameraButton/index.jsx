@@ -94,7 +94,7 @@ const CameraButton = () => {
 	}
 
 	return (
-		<div className="container">
+		<div className="button-container">
 			{isCameraOpen && (
 				<Webcam
 					className="webcam-window"
