@@ -31,3 +31,16 @@ input {
 	text-align: center;
 	text-decoration: none;
 }
+
+.webcam-window {
+	width: 20rem;
+	height: 20rem;
+	border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	.webcam-window {
+		max-width: 60vh;
+		max-height: 6Ovh;
+	}
+}
