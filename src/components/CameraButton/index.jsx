@@ -96,7 +96,12 @@ const CameraButton = () => {
 	return (
 		<div className="container">
 			{isCameraOpen && (
-				<Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
+				<Webcam
+					audio={false}
+					ref={webcamRef}
+					screenshotFormat="image/jpeg"
+					videoConstraints={{ facingMode: 'environment' }}
+				/>
 			)}
 			{picture ? (
 				<img src={picture} alt="Captured" />
