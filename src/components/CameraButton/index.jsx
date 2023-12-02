@@ -74,7 +74,7 @@ const CameraButton = () => {
 		setPicture(URL.createObjectURL(e.target.files[0]));
 	};
 
-	const buttonText = isCameraOpen ? 'TAKE A PICTURE' : 'USE A CAMERA';
+	const buttonText = isCameraOpen ? 'Take a picture' : 'Use a camera';
 
 	const handleClick = () => {
 		if (!isCameraOpen) {
@@ -110,7 +110,18 @@ const CameraButton = () => {
 					<button className="take-a-pict" onClick={handleClick}>
 						{buttonText}
 					</button>
-					<input type="file" onChange={handleChange} className="upload" />
+					<input
+						type="file"
+						onChange={handleChange}
+						className="upload"
+						style={{ display: 'none' }}
+					/>
+					<button
+						className="upload-button"
+						onClick={() => document.querySelector('.upload').click()}
+					>
+						Upload Picture
+					</button>
 				</>
 			)}
 		</div>
