@@ -1,31 +1,31 @@
 import './index.css';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { processPhotoEden } from '../../api/edenAi.js';
 
 const CameraButton = () => {
-  const [picture, setPicture] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
+	const [picture, setPicture] = useState(false);
+	const [loading, setLoading] = useState(false);
+	const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    processPhotoEden(e.target.files[0]);
-    setPicture(true);
-  };
+	const handleChange = (e) => {
+		processPhotoEden(e.target.files[0]);
+		setLoading(true);
+	};
 
 	useEffect(() => {
 		let timer;
 
-		if (picture) {
-			setLoading(true);
+		if (loading) {
+			// setLoading(true);
 
 			timer = setTimeout(() => {
-				console.log('loading');
 				navigate('/IngredientsList');
 			}, 3000);
 		}
 
 		//return () => clearTimeout(timer);
-	}, [picture]);
+	}, [loading]);
 
 	return (
 		<div className="button-container">
