@@ -1,6 +1,6 @@
 import './index.css';
 import React, { useState } from 'react';
-import Webcam from 'react-webcam';
+// import Webcam from 'react-webcam';
 
 // const CameraButton = () => {
 //   const [picture, setPicture] = useState(null);
@@ -156,7 +156,7 @@ const CameraButton = () => {
 				className="upload-button"
 				onClick={() => document.querySelector('.upload').click()}
 			>
-				Upload Picture
+				Select image
 			</button>
 		</div>
 	);

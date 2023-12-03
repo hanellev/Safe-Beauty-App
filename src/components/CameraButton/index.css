@@ -15,9 +15,9 @@
 	border: none;
 }
 
-.take-a-pict:hover {
+/* .take-a-pict:hover {
 	font-size: medium;
-}
+} */
 
 img,
 video,
@@ -40,7 +40,7 @@ input {
 	margin-top: 2rem;
 }
 
-.webcam-window {
+/* .webcam-window {
 	width: 40rem;
 	height: 40rem;
 	border-radius: 10px;
@@ -51,4 +51,4 @@ input {
 		max-width: 100%;
 		max-height: 100%;
 	}
-}
+} */
