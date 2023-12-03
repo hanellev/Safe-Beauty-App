@@ -3,16 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { processPhotoEden } from '../../api/edenAi';
 
 const CameraButton = () => {
-  const [picture, setPicture] = useState(null);
+  const [picture, setPicture] = useState(false);
 
   const handleChange = (e) => {
-    setPicture(URL.createObjectURL(e.target.files[0]));
+    processPhotoEden(e.target.files[0]);
+    setPicture(true);
   };
-  useEffect(() => {
-    if (picture) {
-      processPhotoEden(picture);
-    }
-  }, [picture]);
 
   const handleClick = () => {
     if (!isCameraOpen) {
