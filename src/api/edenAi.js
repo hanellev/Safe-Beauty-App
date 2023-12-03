@@ -12,7 +12,7 @@ export const processPhotoEden = async (photo) => {
   const file = getUri(photo);
   const form = new FormData();
   form.append('providers', 'google');
-  form.append('file', file);
+  form.append('file', photo);
   form.append('language', 'en');
   form.append('fallback_providers', '');
 
