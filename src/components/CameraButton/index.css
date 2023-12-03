@@ -19,14 +19,14 @@
 	font-size: medium;
 } */
 
-img,
+/* img,
 video,
 button,
 input {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
+} */
 
 .upload-button {
 	font-size: 12px;

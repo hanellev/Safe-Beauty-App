@@ -1,0 +1,51 @@
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-left: 1.5rem;
+}
+
+.ingredient {
+	display: flex;
+	flex-direction: column;
+}
+
+.ingredient__safe,
+.ingredient__harmful,
+.ingredient__dangerous {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	gap: 1rem;
+}
+
+.ingredient__harmful-icon,
+.ingredient__dangerous-icon,
+.ingredient__safe-icon {
+	width: 10%;
+	height: 10%;
+	object-fit: cover;
+	justify-self: flex-end;
+}
+
+.ingredient__text {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+h2,
+h3 {
+	margin: 0;
+	color: #181818;
+}
+
+p {
+	margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+	.ingredient__text {
+		max-width: 60%;
+		max-height: 60%;
+	}
+}
