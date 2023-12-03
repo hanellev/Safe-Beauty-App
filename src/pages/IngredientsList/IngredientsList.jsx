@@ -2,7 +2,7 @@ import './IngredientsList.css';
 
 export const IngredientsList = () => {
 	return (
-		<div className="container">
+		<div className="ingredients-container">
 			<h2>Ingredients List</h2>
 
 			<div className="ingredient">
