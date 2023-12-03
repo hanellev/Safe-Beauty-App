@@ -58,7 +58,7 @@ import './index.css';
 // export default CameraButton;
 
 const CameraButton = () => {
-	// const [picture, setPicture] = useState(null);
+	const [picture, setPicture] = useState(null);
 	// const [isCameraOpen, setIsCameraOpen] = useState(false);
 
 	// const webcamRef = React.useRef(null);
