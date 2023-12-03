@@ -150,7 +150,7 @@ const CameraButton = () => {
 				className="upload"
 				style={{ display: 'none' }}
 			/>
-			<button className="take-a-pict">Take a picture</button>
+			<button className="take-a-pict"></button>
 
 			<button
 				className="upload-button"
