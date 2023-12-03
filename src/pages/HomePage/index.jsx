@@ -8,6 +8,12 @@ export const HomePage = () => {
 		<div className="container">
 			<Header />
 			{/* <CameraButton /> */}
+			<input
+				type="file"
+				onChange={handleChange}
+				className="upload"
+				style={{ display: 'none' }}
+			/>
 			<button
 				className="upload-button"
 				onClick={() => document.querySelector('.upload').click()}

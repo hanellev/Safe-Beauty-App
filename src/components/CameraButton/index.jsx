@@ -119,12 +119,12 @@ import './index.css';
 // 					className="upload"
 // 					style={{ display: 'none' }}
 // 				/>
-<button
+{/* <button
 	className="upload-button"
 	onClick={() => document.querySelector('.upload').click()}
 >
 	Upload Picture
-</button>;
+</button>; */}
 // 				</>
 // 			)}
 // 		</div>
