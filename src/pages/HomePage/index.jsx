@@ -1,27 +1,14 @@
 import './style.css';
 import { Header } from '/components/Header/Header.jsx';
 import { Footer } from '/components/Footer/Footer.jsx';
-// import CameraButton from '../../components/CameraButton';
+import CameraButton from '../../components/CameraButton';
 
 export const HomePage = () => {
-	return (
-		<div className="container">
-			<Header />
-			{/* <CameraButton /> */}
-			<input
-				type="file"
-				onChange={handleChange}
-				className="upload"
-				style={{ display: 'none' }}
-			/>
-			<button
-				className="upload-button"
-				onClick={() => document.querySelector('.upload').click()}
-			>
-				Upload Picture
-			</button>
-			;
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="container">
+      <Header />
+      <CameraButton />
+      <Footer />
+    </div>
+  );
 };
