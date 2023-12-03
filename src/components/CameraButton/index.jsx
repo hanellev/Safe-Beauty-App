@@ -3,18 +3,14 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const CameraButton = () => {
-	const [picture, setPicture] = useState(null);
-	const [loading, setLoading] = useState(false);
-	const navigate = useNavigate();
+  const [picture, setPicture] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-	const handleChange = (e) => {
-		setPicture(URL.createObjectURL(e.target.files[0]));
-	};
-	useEffect(() => {
-		if (picture) {
-			// processPhotoEden(picture);
-		}
-	}, [picture]);
+  const handleChange = (e) => {
+    processPhotoEden(e.target.files[0]);
+    setPicture(true);
+  };
 
 	useEffect(() => {
 		let timer;
