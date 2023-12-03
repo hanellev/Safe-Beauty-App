@@ -2,54 +2,55 @@ import './index.css';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { processPhotoEden } from '../../api/edenAi.js';
+import { ingredientsDataset } from '../../api/google_response_processing.jsx';
 
 const CameraButton = () => {
-	const [picture, setPicture] = useState(false);
-	const [loading, setLoading] = useState(false);
-	const navigate = useNavigate();
+  const [picture, setPicture] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-	const handleChange = (e) => {
-		processPhotoEden(e.target.files[0]);
-		setLoading(true);
-	};
+  const handleChange = (e) => {
+    processPhotoEden(e.target.files[0]);
+    setLoading(true);
+  };
 
-	useEffect(() => {
-		let timer;
+  useEffect(() => {
+    let timer;
 
-		if (loading) {
-			// setLoading(true);
+    if (loading) {
+      // setLoading(true);
 
-			timer = setTimeout(() => {
-				navigate('/IngredientsList');
-			}, 3000);
-		}
+      timer = setTimeout(() => {
+        navigate('/IngredientsList');
+      }, 9000);
+    }
 
-		//return () => clearTimeout(timer);
-	}, [loading]);
+    //return () => clearTimeout(timer);
+  }, [loading]);
 
-	return (
-		<div className="button-container">
-			{loading ? (
-				<span>Loading...</span>
-			) : (
-				<>
-					<input
-						type="file"
-						onChange={handleChange}
-						className="upload"
-						style={{ display: 'none' }}
-					/>
-					<button className="take-a-pict"></button>
-					<button
-						className="upload-button"
-						onClick={() => document.querySelector('.upload').click()}
-					>
-						Select image
-					</button>
-				</>
-			)}
-		</div>
-	);
+  return (
+    <div className="button-container">
+      {loading ? (
+        <span>Loading...</span>
+      ) : (
+        <>
+          <input
+            type="file"
+            onChange={handleChange}
+            className="upload"
+            style={{ display: 'none' }}
+          />
+          <button className="take-a-pict"></button>
+          <button
+            className="upload-button"
+            onClick={() => document.querySelector('.upload').click()}
+          >
+            Select image
+          </button>
+        </>
+      )}
+    </div>
+  );
 };
 
 export default CameraButton;

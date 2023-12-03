@@ -1,12 +1,15 @@
 import axios from 'axios';
 import FormData from 'form-data';
-import { ingredientsDataset } from './google_response_processing';
+// import { ingredientsDataset } from './google_response_processing';
+import { useState } from 'react';
 
 function getUri(file) {
   const blob = new Blob([file], { type: 'image/jpeg' });
   console.log(URL.createObjectURL(blob));
   return URL.createObjectURL(blob);
 }
+
+let googleData = [];
 
 export const processPhotoEden = async (photo) => {
   const file = getUri(photo);
@@ -31,6 +34,8 @@ export const processPhotoEden = async (photo) => {
     .request(options)
     .then((response) => {
       console.log(response);
+      googleData = response.data.google.bounding_boxes;
+      console.log(googleData);
     })
     .catch((error) => {
       console.error(error);
