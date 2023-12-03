@@ -130,36 +130,55 @@ import React, { useState } from 'react';
 // };
 
 // export default CameraButton;
+import { processPhotoEden } from '../../api/edenAi';
 
 const CameraButton = () => {
-	const [picture, setPicture] = useState(null);
+  const [picture, setPicture] = useState(null);
 
-	const handleChange = (e) => {
-		setPicture(URL.createObjectURL(e.target.files[0]));
-	};
+  const handleChange = (e) => {
+    setPicture(URL.createObjectURL(e.target.files[0]));
+  };
+  useEffect(() => {
+    if (picture) {
+      processPhotoEden(picture);
+    }
+  }, [picture]);
 
-	if (picture) {
-		return <span>loading...</span>;
-	}
+  const handleClick = () => {
+    if (!isCameraOpen) {
+      setIsCameraOpen(true);
+      return;
+    }
 
-	return (
-		<div className="button-container">
-			<input
-				type="file"
-				onChange={handleChange}
-				className="upload"
-				style={{ display: 'none' }}
-			/>
-			<button className="take-a-pict"></button>
+    if (isCameraOpen) {
+      capture();
+      setIsCameraOpen(false);
+      // TODO: implement logic to send picture to api
+    }
+  };
 
-			<button
-				className="upload-button"
-				onClick={() => document.querySelector('.upload').click()}
-			>
-				Select image
-			</button>
-		</div>
-	);
+  if (picture) {
+    return <span>loading...</span>;
+  }
+
+  return (
+    <div className="button-container">
+      <input
+        type="file"
+        onChange={handleChange}
+        className="upload"
+        style={{ display: 'none' }}
+      />
+      <button className="take-a-pict"></button>
+
+      <button
+        className="upload-button"
+        onClick={() => document.querySelector('.upload').click()}
+      >
+        Select image
+      </button>
+    </div>
+  );
 };
 
 export default CameraButton;
