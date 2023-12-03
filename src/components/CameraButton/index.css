@@ -2,9 +2,6 @@
 	display: flex;
 }
 
-.button-container {
-}
-
 .take-a-pict {
 	background-image: url(./images/camera-view6.svg);
 	background-size: contain;
