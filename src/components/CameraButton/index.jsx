@@ -1,5 +1,5 @@
 import './index.css';
-// import React, { useState } from 'react';
+git 
 // import Webcam from 'react-webcam';
 
 // const CameraButton = () => {
