@@ -150,6 +150,8 @@ const CameraButton = () => {
 				className="upload"
 				style={{ display: 'none' }}
 			/>
+			<button className="take-a-pict">Take a picture</button>
+
 			<button
 				className="upload-button"
 				onClick={() => document.querySelector('.upload').click()}
