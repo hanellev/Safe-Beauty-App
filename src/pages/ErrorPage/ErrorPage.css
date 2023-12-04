@@ -1,4 +1,54 @@
+.error-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .error-banner {
-	width: 10rem;
-	height: 10rem;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.error-text {
+	font-size: 1rem;
+	position: absolute;
+	color: beige;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+}
+
+.error-text p {
+	color: beige;
+}
+
+#error-text__mobile {
+	display: none;
+}
+
+#error-heading {
+	font-size: 8rem;
+	color: beige;
+}
+
+@media (max-width: 600px) {
+	.error-banner {
+		background-attachment: fixed;
+	}
+	#error-heading {
+		font-size: 3rem;
+	}
+	.error-text p {
+		display: none;
+	}
+
+	#error-text__mobile {
+		color: beige;
+		display: contents;
+		font-size: 1.5rem;
+	}
 }
