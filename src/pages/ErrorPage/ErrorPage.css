@@ -1,6 +1,6 @@
-.error-logo {
+.error-banner {
 	width: 10rem;
 	height: 10rem;
-	background-image: url(../images/banner.jpg);
-	background-size: contain;
+	background-image: url(/images/banner.jpg);
+	background-size: cover;
 }
