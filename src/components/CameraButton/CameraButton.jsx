@@ -1,10 +1,10 @@
-import './index.css';
+import './CameraButton.css';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { processPhotoEden } from '../../api/edenAi.js';
 
 const CameraButton = () => {
-	const [picture, setPicture] = useState(false);
+	// const [picture, setPicture] = useState(false);
 	const [loading, setLoading] = useState(false);
 	const navigate = useNavigate();
 
