@@ -1,6 +1,4 @@
 .error-banner {
 	width: 10rem;
 	height: 10rem;
-	background-image: url(/images/banner.jpg);
-	background-size: cover;
 }
