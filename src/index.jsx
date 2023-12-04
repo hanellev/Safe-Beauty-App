@@ -3,6 +3,8 @@ import { App } from './components/App/App';
 import { HomePage } from './pages/HomePage';
 import * as React from 'react';
 import { IngredientsList } from './pages/IngredientsList/IngredientsList';
+import { DetailPage } from './pages/DetailPage/DetailPage';
+import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 import './global.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
