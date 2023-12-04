@@ -21,6 +21,12 @@ export const App = () => {
 					Ingredients List
 				</NavLink>
 				<span> | </span>
+				<NavLink
+					to="/DetailPage"
+					className={isActive('/IngredientsList') ? 'active' : 'normal'}
+				>
+					Detail Page
+				</NavLink>
 			</nav>
 			<Outlet />
 		</div>

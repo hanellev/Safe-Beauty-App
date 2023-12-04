@@ -1,3 +1,5 @@
+import './ErrorPage.css';
+
 export const ErrorPage = () => {
 	return (
 		<main>

@@ -21,6 +21,10 @@ const router = createBrowserRouter([
 				path: 'IngredientsList',
 				element: <IngredientsList />,
 			},
+			{
+				path: 'DetailPage',
+				element: <DetailPage />,
+			},
 		],
 	},
 ]);
