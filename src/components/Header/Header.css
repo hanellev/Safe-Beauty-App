@@ -8,7 +8,7 @@
 .logo {
 	width: 5rem;
 	height: 5rem;
-	background-image: url(./img/cream-logo.png);
+	background-image: url(/images/cream-logo.png);
 	background-size: contain;
 	position: relative;
 }
