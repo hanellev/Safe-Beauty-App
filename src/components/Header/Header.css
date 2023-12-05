@@ -13,7 +13,7 @@
 	position: relative;
 }
 
-h1 {
+.header-headline {
 	position: absolute;
 	padding-top: 2rem;
 	font-size: 2rem;

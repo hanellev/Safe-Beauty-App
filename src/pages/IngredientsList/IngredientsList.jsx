@@ -3,12 +3,12 @@ import './IngredientsList.css';
 export const IngredientsList = () => {
 	return (
 		<div className="ingredients-container">
-			<h2>Ingredients List</h2>
+			<h2 className="ingredients-heading">Ingredients List</h2>
 
 			<div className="ingredient">
 				<div className="ingredient__safe">
 					<img
-						className="ingredient__harmful-icon"
+						className="ingredient-icon"
 						src="./images/cream-green.png"
 						alt="Safe Icon"
 					/>
@@ -20,7 +20,7 @@ export const IngredientsList = () => {
 
 				<div className="ingredient__harmful">
 					<img
-						className="ingredient__harmful-icon"
+						className="ingredient-icon"
 						src="./images/cream-orange.png"
 						alt="Harmful Icon"
 					/>
@@ -32,7 +32,7 @@ export const IngredientsList = () => {
 
 				<div className="ingredient__dangerous">
 					<img
-						className="ingredient__harmful-icon"
+						className="ingredient-icon"
 						src="./images/cream-red.png"
 						alt="Dangerous Icon"
 					/>

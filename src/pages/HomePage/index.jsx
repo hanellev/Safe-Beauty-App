@@ -5,7 +5,7 @@ import CameraButton from '/components/CameraButton/CameraButton.jsx';
 
 export const HomePage = () => {
 	return (
-		<div className="container">
+		<div className="home-container">
 			<Header />
 			<CameraButton />
 			<Footer />
