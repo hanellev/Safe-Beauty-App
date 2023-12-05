@@ -7,8 +7,8 @@
 }
 
 .error-logo {
-	width: 20rem;
-	height: 20rem;
+	width: 15rem;
+	height: 15rem;
 	background-image: url(images/cream-logo.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -17,33 +17,43 @@
 .error-text {
 	font-size: 1rem;
 	text-align: center;
-	/* height: 30%;
-	width: 50%; */
 }
 
 .error-button {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	color: #181818;
 	background-color: #67c975;
 	border: none;
 	border-radius: 10px;
-	padding: 1rem 1.5rem;
+	padding: 0.8rem 1.2rem;
 	text-align: center;
 	text-decoration: none;
-	margin-top: 1rem;
+	margin-top: 5rem;
 }
 
 #error-heading {
-	font-size: 8rem;
+	font-size: 6rem;
 	color: #181818;
 	text-align: center;
+	margin-top: 3rem;
 }
 
 @media (max-width: 600px) {
-	/* .error-logo {
-		background-attachment: fixed;
-	} */
 	#error-heading {
 		font-size: 3rem;
+	}
+
+	.error-logo {
+		max-width: 10rem;
+		max-height: 10rem;
+	}
+
+	.error-text {
+		font-size: 0.6rem;
+	}
+
+	.error-button {
+		font-size: 0.5rem;
+		padding: 0.5rem 1rem;
 	}
 }
