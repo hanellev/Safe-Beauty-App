@@ -1,44 +1,69 @@
 import './IngredientsList.css';
+import { useNavigate } from 'react-router-dom';
 
 export const IngredientsList = () => {
+	const navigate = useNavigate();
+
+	const redirectToDetailPage = () => {
+		navigate('/DetailPage');
+	};
+
 	return (
 		<div className="ingredients-container">
 			<h2 className="ingredients-heading">Ingredients List</h2>
 
-			<div className="ingredient">
-				<div className="ingredient__safe">
+			<div className="ingredients">
+				<div className="ingredients__safe">
 					<img
-						className="ingredient-icon"
+						className="ingredients-icon"
 						src="./images/cream-green.png"
-						alt="Safe Icon"
+						alt="Green Cream jar icon"
 					/>
-					<div className="ingredient__text">
+					<div className="ingredients__text">
 						<h3>Safe Ingredients</h3>
 						<p>Amount:</p>
+						<button
+							className="ingredients-button"
+							onClick={redirectToDetailPage}
+						>
+							Learn More
+						</button>
 					</div>
 				</div>
 
-				<div className="ingredient__harmful">
+				<div className="ingredients__harmful">
 					<img
-						className="ingredient-icon"
+						className="ingredients-icon"
 						src="./images/cream-orange.png"
-						alt="Harmful Icon"
+						alt="Orange cream jar icon"
 					/>
-					<div className="ingredient__text">
+					<div className="ingredients__text">
 						<h3>Harmful Ingredients</h3>
 						<p>Amount:</p>
+						<button
+							className="ingredients-button"
+							onClick={redirectToDetailPage}
+						>
+							Learn More
+						</button>
 					</div>
 				</div>
 
-				<div className="ingredient__dangerous">
+				<div className="ingredients__dangerous">
 					<img
-						className="ingredient-icon"
+						className="ingredients-icon"
 						src="./images/cream-red.png"
-						alt="Dangerous Icon"
+						alt="Red cream jar icon"
 					/>
-					<div className="ingredient__text">
+					<div className="ingredients__text">
 						<h3>Dangerous Ingredients</h3>
 						<p>Amount:</p>
+						<button
+							className="ingredients-button"
+							onClick={redirectToDetailPage}
+						>
+							Learn More
+						</button>
 					</div>
 				</div>
 			</div>

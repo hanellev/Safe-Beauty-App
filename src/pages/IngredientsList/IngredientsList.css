@@ -10,15 +10,15 @@
 	margin-top: 5rem;
 }
 
-.ingredient-icon {
-	width: 10%;
-	height: 10%;
+.ingredients-icon {
+	width: 15%;
+	height: 15%;
 	object-fit: cover;
 }
 
-.ingredient__safe,
-.ingredient__harmful,
-.ingredient__dangerous {
+.ingredients__safe,
+.ingredients__harmful,
+.ingredients__dangerous {
 	display: flex;
 	gap: 1rem;
 	align-items: center;
@@ -26,7 +26,19 @@
 	margin-top: 1rem;
 }
 
-.ingredient__text {
+.ingredients__text {
 	width: 30%;
-	padding-block: 0.2rem;
+	line-height: 1rem;
+	margin-bottom: 2rem;
+}
+
+.ingredients-button {
+	font-size: 0.7rem;
+	color: #181818;
+	background-color: #67c975;
+	border: none;
+	border-radius: 10px;
+	padding: 0.4rem 0.8rem;
+	text-align: center;
+	text-decoration: none;
 }

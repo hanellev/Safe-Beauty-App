@@ -2,14 +2,62 @@ import './DetailPage.css';
 
 export const DetailPage = () => {
 	return (
-		<main>
-			<h2>Glycerine</h2>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
-				repellendus consectetur provident iure nam! Nobis, quos fuga quae, iste
-				aliquid optio asperiores nisi sapiente ullam iure soluta dolorum tempora
-				placeat?
-			</p>
-		</main>
+		<div className="detail-page-container">
+			<img
+				className="ingredients-icon"
+				src="./images/cream-red.png"
+				alt="Red cream jar icon"
+			/>
+			<h2>Dangerous Ingredients</h2>
+			<ul>
+				<p>para-dioxane</p>
+				<li>Allergenic:</li>
+				<li>Carcinogenic:</li>
+				<li>Suitable for pregnant woman:</li>
+				<li>Impact:</li>
+			</ul>
+			<ul>
+				<p>diethylendioxid</p>
+				<li>Allergenic:</li>
+				<li>Carcinogenic:</li>
+				<li>Suitable for pregnant woman:</li>
+				<li>Impact:</li>
+			</ul>
+			<ul>
+				<p>1,4-DIOXANE</p>
+				<li>Allergenic:</li>
+				<li>Carcinogenic:</li>
+				<li>Suitable for pregnant woman:</li>
+				<li>Impact:</li>
+			</ul>
+			<ul>
+				<p>2-BROM-2-NITROPROPAN-1,3-DIOL</p>
+				<li>Allergenic:</li>
+				<li>Carcinogenic:</li>
+				<li>Suitable for pregnant woman:</li>
+				<li>Impact:</li>
+			</ul>
+			<ul>
+				<p>bronopol</p>
+				<li>Allergenic:</li>
+				<li>Carcinogenic:</li>
+				<li>Suitable for pregnant woman:</li>
+				<li>Impact:</li>
+			</ul>
+			<ul>
+				<p>2-butoxyethanol</p>
+				<li>Allergenic:</li>
+				<li>Carcinogenic:</li>
+				<li>Suitable for pregnant woman:</li>
+				<li>Impact:</li>
+			</ul>
+			<ul>
+				<p>ethyleneglycol</p>
+				<li>Allergenic:</li>
+				<li>Carcinogenic:</li>
+				<li>Suitable for pregnant woman:</li>
+				<li>Impact:</li>
+			</ul>
+		</div>
 	);
 };
