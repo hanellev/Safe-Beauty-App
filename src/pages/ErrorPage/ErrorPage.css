@@ -1,54 +1,49 @@
 .error-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
-.error-banner {
-	width: 100vw;
-	height: 100vh;
-	background-image: url(images/banner.jpg);
+.error-logo {
+	width: 20rem;
+	height: 20rem;
+	background-image: url(images/cream-logo.png);
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
-	position: relative;
 }
 
 .error-text {
 	font-size: 1rem;
-	position: absolute;
-	color: beige;
-	top: 50%;
-	left: 5%;
-	transform: translateY(-50%);
+	text-align: center;
+	/* height: 30%;
+	width: 50%; */
 }
 
-.error-text p {
-	color: beige;
-}
-
-#error-text__mobile {
-	display: none;
+.error-button {
+	font-size: 1.1rem;
+	color: #181818;
+	background-color: #67c975;
+	border: none;
+	border-radius: 10px;
+	padding: 1rem 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 1rem;
 }
 
 #error-heading {
 	font-size: 8rem;
-	color: beige;
+	color: #181818;
+	text-align: center;
 }
 
 @media (max-width: 600px) {
-	.error-banner {
+	/* .error-logo {
 		background-attachment: fixed;
-	}
+	} */
 	#error-heading {
 		font-size: 3rem;
-	}
-	.error-text p {
-		display: none;
-	}
-
-	#error-text__mobile {
-		color: beige;
-		display: contents;
-		font-size: 1.5rem;
 	}
 }

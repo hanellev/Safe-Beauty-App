@@ -23,7 +23,7 @@ export const App = () => {
 				<span> | </span>
 				<NavLink
 					to="/DetailPage"
-					className={isActive('/IngredientsList') ? 'active' : 'normal'}
+					className={isActive('/DetailPage') ? 'active' : 'normal'}
 				>
 					Detail Page
 				</NavLink>
