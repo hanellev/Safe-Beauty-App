@@ -39,7 +39,11 @@ const CameraButton = () => {
 						className="upload"
 						style={{ display: 'none' }}
 					/>
-					<button className="take-a-pict"></button>
+					<button
+						role="img"
+						aria-label="logo-cream-jar"
+						className="take-a-pict"
+					></button>
 					<button
 						className="upload-button"
 						onClick={() => document.querySelector('.upload').click()}
