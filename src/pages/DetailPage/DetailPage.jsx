@@ -9,50 +9,50 @@ export const DetailPage = () => {
 				alt="Red cream jar icon"
 			/>
 			<h2>Dangerous Ingredients</h2>
-			<ul>
-				<p className="ingredient-name">para-dioxane</p>
+			<p className="ingredient-name">para-dioxane</p>
+			<ul className="ingredient-info">
 				<li>Allergenic:</li>
 				<li>Carcinogenic:</li>
 				<li>Suitable for pregnant woman:</li>
 				<li>Impact:</li>
 			</ul>
-			<ul>
-				<p className="ingredient-name">diethylendioxid</p>
+			<p className="ingredient-name">diethylendioxid</p>
+			<ul className="ingredient-info">
 				<li>Allergenic:</li>
 				<li>Carcinogenic:</li>
 				<li>Suitable for pregnant woman:</li>
 				<li>Impact:</li>
 			</ul>
-			<ul>
-				<p className="ingredient-name">1,4-DIOXANE</p>
+			<p className="ingredient-name">1,4-DIOXANE</p>
+			<ul className="ingredient-info">
 				<li>Allergenic:</li>
 				<li>Carcinogenic:</li>
 				<li>Suitable for pregnant woman:</li>
 				<li>Impact:</li>
 			</ul>
-			<ul>
-				<p className="ingredient-name">2-BROM-2-NITROPROPAN-1,3-DIOL</p>
+			<p className="ingredient-name">2-BROM-2-NITROPROPAN-1,3-DIOL</p>
+			<ul className="ingredient-info">
 				<li>Allergenic:</li>
 				<li>Carcinogenic:</li>
 				<li>Suitable for pregnant woman:</li>
 				<li>Impact:</li>
 			</ul>
-			<ul>
-				<p className="ingredient-name">bronopol</p>
+			<p className="ingredient-name">bronopol</p>
+			<ul className="ingredient-info">
 				<li>Allergenic:</li>
 				<li>Carcinogenic:</li>
 				<li>Suitable for pregnant woman:</li>
 				<li>Impact:</li>
 			</ul>
-			<ul>
-				<p className="ingredient-name">2-butoxyethanol</p>
+			<p className="ingredient-name">2-butoxyethanol</p>
+			<ul className="ingredient-info">
 				<li>Allergenic:</li>
 				<li>Carcinogenic:</li>
 				<li>Suitable for pregnant woman:</li>
 				<li>Impact:</li>
 			</ul>
-			<ul>
-				<p className="ingredient-name">ethyleneglycol</p>
+			<p className="ingredient-name">ethyleneglycol</p>
+			<ul className="ingredient-info">
 				<li>Allergenic:</li>
 				<li>Carcinogenic:</li>
 				<li>Suitable for pregnant woman:</li>
