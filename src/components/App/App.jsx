@@ -11,21 +11,21 @@ export const App = () => {
 		<div className="container">
 			<nav>
 				<NavLink to="/" className={isActive('/') ? 'active' : 'normal'}>
-					Home Page
+					Home
 				</NavLink>
 				<span> | </span>
 				<NavLink
 					to="/IngredientsList"
 					className={isActive('/IngredientsList') ? 'active' : 'normal'}
 				>
-					Ingredients List
+					Ingredients
 				</NavLink>
 				<span> | </span>
 				<NavLink
 					to="/DetailPage"
 					className={isActive('/DetailPage') ? 'active' : 'normal'}
 				>
-					Detail Page
+					Detail
 				</NavLink>
 			</nav>
 			<Outlet />

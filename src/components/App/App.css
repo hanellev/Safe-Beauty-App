@@ -1,4 +1,4 @@
-nav {
+/* nav {
 	position: static;
 	margin-top: 2rem;
 	width: 100%;
@@ -21,4 +21,22 @@ nav span {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 1.1em;
+} */
+
+/* Style according to mobile first approach. Media for desktop and larger displays should be added. */
+nav {
+	margin: 2rem;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.normal {
+	color: #181818;
+	text-decoration: none;
+}
+
+.active {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
 }

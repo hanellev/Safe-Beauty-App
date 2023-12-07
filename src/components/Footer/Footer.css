@@ -1,5 +1,8 @@
 .footer-container {
-	margin: 2rem;
+	/* 
+	TO DO: To set margin from the top works, but not bottom. Why? Because of body height?
+	margin: 12rem 2rem 2rem 2rem; */
+	margin-bottom: 3rem;
 }
 
 .footer-text {

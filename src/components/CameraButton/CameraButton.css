@@ -1,4 +1,4 @@
-.button-container {
+/* .button-container {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -14,7 +14,7 @@
 	border: none;
 }
 
-.upload-button {
+/* .upload-button {
 	font-size: 12px;
 	color: #181818;
 	background-color: #67c975;
@@ -24,4 +24,33 @@
 	text-align: center;
 	text-decoration: none;
 	margin-top: 5rem;
+} */
+
+/* Style according to mobile first approach. Media for desktop and larger displays should be added. */
+.button-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.take-a-pict {
+	background-image: url(/images/camera-view6.svg);
+	background-size: contain;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	width: 8rem;
+	height: 8rem;
+	border: none;
+	margin-top: 8rem;
+}
+
+.upload-button {
+	font-size: 1.1rem;
+	color: #181818;
+	background-color: #67c975;
+	border: none;
+	border-radius: 1.3rem;
+	padding: 0.9rem 2rem;
+	text-align: center;
+	margin-top: 4rem;
 }
