@@ -7,7 +7,7 @@
 }
 
 .ingredients-heading {
-	margin-top: 4rem;
+	margin-top: 3rem;
 	text-align: center;
 }
 
@@ -16,12 +16,12 @@
 	gap: 1.5rem;
 	align-items: center;
 	justify-content: center;
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
 
 .ingredients-icon {
-	width: 7rem;
-	height: 7rem;
+	width: 6.5rem;
+	height: 6.5rem;
 	object-fit: cover;
 }
 
