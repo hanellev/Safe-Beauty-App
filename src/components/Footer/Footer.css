@@ -1,8 +1,11 @@
 .footer-container {
 	/* 
-	TO DO: To set margin from the top works, but not bottom. Why? Because of body height?
-	margin: 12rem 2rem 2rem 2rem; */
-	margin-bottom: 3rem;
+	TBD: When position is unset, margin-bottom does not work. Why?*/
+	position: static;
+	position: absolute;
+	bottom: 2rem;
+	left: 1rem;
+	right: 1rem;
 }
 
 .footer-text {
