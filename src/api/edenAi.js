@@ -1,6 +1,5 @@
 import axios from 'axios';
 import FormData from 'form-data';
-// import { ingredientsDataset } from './google_response_processing';
 import { useState } from 'react';
 
 function getUri(file) {
@@ -9,8 +8,7 @@ function getUri(file) {
   return URL.createObjectURL(blob);
 }
 
-let googleData = [];
-
+// creating a request to google API via Edenai, receiving response
 export const processPhotoEden = async (photo) => {
   const file = getUri(photo);
   const form = new FormData();
@@ -30,14 +28,19 @@ export const processPhotoEden = async (photo) => {
     data: form,
   };
 
-  axios
-    .request(options)
-    .then((response) => {
-      console.log(response);
-      googleData = response.data.google.bounding_boxes;
-      console.log(googleData);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+  const { data } = await axios.request(options).catch((e) => console.error(e));
+
+  return data;
 };
+
+//initial api request below
+// axios
+//   .request(options)
+//   .then((response) => {
+//     console.log(response);
+//     googleData = response.data.google.bounding_boxes;
+//     console.log(googleData);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });

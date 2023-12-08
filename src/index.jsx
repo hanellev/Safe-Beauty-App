@@ -7,24 +7,24 @@ import './global.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <App />,
-		// errorElement: <ErrorPage />,
+  {
+    path: '/',
+    element: <App />,
+    // errorElement: <ErrorPage />,
 
-		children: [
-			{
-				path: '/',
-				element: <HomePage />,
-			},
-			{
-				path: 'IngredientsList',
-				element: <IngredientsList />,
-			},
-		],
-	},
+    children: [
+      {
+        path: '/',
+        element: <HomePage />,
+      },
+      {
+        path: 'IngredientsList',
+        element: <IngredientsList />,
+      },
+    ],
+  },
 ]);
 
 createRoot(document.querySelector('#app')).render(
-	<RouterProvider router={router} />
+  <RouterProvider router={router} />,
 );

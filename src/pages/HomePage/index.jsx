@@ -1,7 +1,7 @@
 import './style.css';
 import { Header } from '/components/Header/Header.jsx';
 import { Footer } from '/components/Footer/Footer.jsx';
-import CameraButton from '../../components/CameraButton';
+import { CameraButton } from '/components/CameraButton/index.jsx';
 
 export const HomePage = () => {
   return (
