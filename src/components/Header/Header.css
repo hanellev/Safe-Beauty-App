@@ -35,12 +35,12 @@
 	background-image: url(/images/cream-logo.png);
 	background-size: contain;
 	position: relative;
-	margin-top: 3.5rem;
+	margin-top: 2.3rem;
 }
 
 .header-headline {
 	position: absolute;
-	padding-top: 6.5rem;
+	padding-top: 5.3rem;
 	font-size: 2.2rem;
 	letter-spacing: 0.2rem;
 }
