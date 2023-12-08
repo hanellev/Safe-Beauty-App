@@ -13,7 +13,7 @@ export const IngredientsList = () => {
 			<h2 className="ingredients-heading">Ingredients List</h2>
 
 			<div className="ingredients">
-				<div className="ingredients__safe">
+				<div className="ingredients__category">
 					<img
 						className="ingredients-icon"
 						src="./images/cream-green.png"
@@ -31,7 +31,7 @@ export const IngredientsList = () => {
 					</div>
 				</div>
 
-				<div className="ingredients__harmful">
+				<div className="ingredients__category">
 					<img
 						className="ingredients-icon"
 						src="./images/cream-orange.png"
@@ -49,7 +49,7 @@ export const IngredientsList = () => {
 					</div>
 				</div>
 
-				<div className="ingredients__dangerous">
+				<div className="ingredients__category">
 					<img
 						className="ingredients-icon"
 						src="./images/cream-red.png"
