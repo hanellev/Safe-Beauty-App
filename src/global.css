@@ -5,6 +5,7 @@
 	font-family: 'Roboto Mono', monospace;
 }
 
+html,
 body {
 	background-color: #f8fff8;
 	max-height: 100dvh;
