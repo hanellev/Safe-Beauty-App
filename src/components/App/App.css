@@ -23,6 +23,12 @@ nav span {
 	font-size: 1.1em;
 } */
 
+.app-container {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
 /* Style according to mobile first approach. Media for desktop and larger displays should be added. */
 nav {
 	margin: 2rem;

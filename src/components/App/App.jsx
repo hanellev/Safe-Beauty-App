@@ -8,7 +8,7 @@ export const App = () => {
 	const isActive = (path) => location.pathname === path;
 
 	return (
-		<div className="container">
+		<div className="app-container">
 			<nav>
 				<NavLink to="/" className={isActive('/') ? 'active' : 'normal'}>
 					Home
