@@ -1,59 +1,68 @@
-/*
-.detail-list {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding-inline-start: 0;
-} */
-
 .detail-icon {
-	width: 8rem;
-	height: 8rem;
+	width: 6rem;
+	height: 6rem;
 }
 
 .detail-page-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 4rem;
+	/* margin-top: 4rem; */
 }
 
 .detail-heading {
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
 
 .detail-name {
 	font-weight: bolder;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 .detail-info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left: 5rem;
-	margin-right: 5rem;
-}
-/* 
-.detail-list {
-	list-style-type: none;
-} */
-
-dd {
-	margin-inline-start: 0;
-	font-size: 0.6rem;
-	/* text-align: center; */
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
-dt {
-	/* text-align: center;
-	 */
+.detail-labels {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.2rem;
 }
 
-dl {
-	margin-block-start: 0;
-	margin-block-end: 0;
+.allergenic,
+.carcinogenic,
+.pregnancy {
+	float: left;
+	border-radius: 0.5rem;
+	padding: 0.1rem 0.5rem;
+	/* margin-right: 10px; */
+	white-space: nowrap;
+	color: white;
+	font-size: 0.7rem;
+}
+
+.allergenic {
+	background-color: #db484b;
+}
+
+.carcinogenic {
+	background-color: #a00303d3;
+}
+
+.pregnancy {
+	background-color: #ba8376;
+}
+
+.detail-impact {
+	text-align: center;
+	font-size: 0.7rem;
 }
