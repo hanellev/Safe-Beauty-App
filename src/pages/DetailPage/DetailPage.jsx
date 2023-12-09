@@ -1,119 +1,37 @@
 import './DetailPage.css';
+import { useContext } from 'react';
+import { CountContext } from '../../components/App/DataProvider';
 
 export const DetailPage = () => {
-	return (
-		<div className="detail-page-container">
-			<img
-				className="detail-icon"
-				src="./images/cream-red.png"
-				alt="Red cream jar icon"
-			/>
-			<h2 className="detail-heading">Dangerous Ingredients</h2>
-			<div className="detail-info">
-				<h4 className="detail-name">para-dioxane</h4>
-				<dl className="detail-list">
-					<dt>Allergenic:</dt>
-					<dt>Carcinogenic:</dt>
-					<dt>Suitable for pregnant woman:</dt>
-					{/* <dt>Impact:</dt> */}
-					<dd>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-						neque laudantium, rerum facilis natus exercitationem recusandae
-						corrupti magnam tenetur illum aspernatur. Hic quaerat quisquam
-						labore ducimus, consequuntur unde quidem similique.
-					</dd>
-				</dl>
-			</div>
-			<div className="detail-info">
-				<h4 className="detail-name">diethylendioxid</h4>
-				<dl className="detail-list">
-					<dt>Allergenic:</dt>
-					<dt>Carcinogenic:</dt>
-					<dt>Suitable for pregnant woman:</dt>
-					{/* <dt>Impac:</dt> */}
-					<dd>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-						neque laudantium, rerum facilis natus exercitationem recusandae
-						corrupti magnam tenetur illum aspernatur. Hic quaerat quisquam
-						labore ducimus, consequuntur unde quidem similique.
-					</dd>
-				</dl>
-			</div>
-			<div className="detail-info">
-				<h4 className="detail-name">1,4-DIOXANE</h4>
-				<dl className="detail-list">
-					<dt>Allergenic:</dt>
-					<dt>Carcinogenic:</dt>
-					<dt>Suitable for pregnant woman:</dt>
-					{/* <dt>Impact:</dt> */}
-					<dd>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-						neque laudantium, rerum facilis natus exercitationem recusandae
-						corrupti magnam tenetur illum aspernatur. Hic quaerat quisquam
-						labore ducimus, consequuntur unde quidem similique.
-					</dd>
-				</dl>
-			</div>
-			<div className="detail-info">
-				<h4 className="detail-name">2-BROM-2-NITROPROPAN-1,3-DIOL</h4>
-				<dl className="detail-list">
-					<dt>Allergenic:</dt>
-					<dt>Carcinogenic:</dt>
-					<dt>Suitable for pregnant woman:</dt>
-					{/* <dt>Impact:</dt> */}
-					<dd>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-						neque laudantium, rerum facilis natus exercitationem recusandae
-						corrupti magnam tenetur illum aspernatur. Hic quaerat quisquam
-						labore ducimus, consequuntur unde quidem similique.
-					</dd>
-				</dl>
-			</div>
-			<div className="detail-info">
-				<h4 className="detail-name">bronopol</h4>
-				<dl className="detail-list">
-					<dt>Allergenic:</dt>
-					<dt>Carcinogenic:</dt>
-					<dt>Suitable for pregnant woman:</dt>
-					{/* <dt>Impact:</dt> */}
-					<dd>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-						neque laudantium, rerum facilis natus exercitationem recusandae
-						corrupti magnam tenetur illum aspernatur. Hic quaerat quisquam
-						labore ducimus, consequuntur unde quidem similique.
-					</dd>
-				</dl>
-			</div>
-			<div className="detail-info">
-				<h4 className="detail-name">2-butoxyethanol</h4>
-				<dl className="detail-list">
-					<dt>Allergenic:</dt>
-					<dt>Carcinogenic:</dt>
-					<dt>Suitable for pregnant woman:</dt>
-					{/* <dt>Impact:</dt> */}
-					<dd>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-						neque laudantium, rerum facilis natus exercitationem recusandae
-						corrupti magnam tenetur illum aspernatur. Hic quaerat quisquam
-						labore ducimus, consequuntur unde quidem similique.
-					</dd>
-				</dl>
-			</div>
-			<div className="detail-info">
-				<h4 className="detail-name">ethyleneglycol</h4>
-				<dl className="detail-list">
-					<dt>Allergenic:</dt>
-					<dt>Carcinogenic:</dt>
-					<dt>Suitable for pregnant woman:</dt>
-					{/* <dt>Impact:</dt> */}
-					<dd>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-						neque laudantium, rerum facilis natus exercitationem recusandae
-						corrupti magnam tenetur illum aspernatur. Hic quaerat quisquam
-						labore ducimus, consequuntur unde quidem similique.
-					</dd>
-				</dl>
-			</div>
-		</div>
-	);
+  const { safeIngrData, doubtIngrData, harmfulIngrData } =
+    useContext(CountContext);
+  return (
+    <>
+      <div className="detail-page-container" id="danger">
+        <img
+          className="detail-icon"
+          src="./images/cream-red.png"
+          alt="Red cream jar icon"
+        />
+        <h2 className="detail-heading">Dangerous Ingredients</h2>
+        {harmfulIngrData.map((item) => {
+          return (
+            <div className="detail-info" key={item.id}>
+              <h4 className="detail-name">{item.name}</h4>
+              <dl className="detail-list">
+                <dt>Allergenic: {item.allergenic ? 'yes' : 'no'}</dt>
+                <dt>Carcinogenic: {item.carcinogenic ? 'yes' : 'no'}</dt>
+                <dt>
+                  Suitable for pregnant woman:{' '}
+                  {item['suitable-for-pregnant-women'] ? 'yes' : 'no'}
+                </dt>
+                <dt>Impact:</dt>
+                <dd>{item.impact}</dd>
+              </dl>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
 };
