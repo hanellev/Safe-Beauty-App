@@ -3,9 +3,9 @@
 	TBD: When position is unset, margin-bottom does not work. Why?*/
 	/* position: static;
 	position: absolute; */
-	bottom: 2rem;
-	left: 1rem;
-	right: 1rem;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .footer-text {
