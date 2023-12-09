@@ -1,12 +1,14 @@
 import './index.css';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { processPhotoEden } from '../../api/edenAi.js';
 import { responseProcessing } from '../../api/google_response_processing.jsx';
 import { resultsProcessing } from '../../api/results_processing.jsx';
 import data from '../../api/ingredients_dataset_API.json';
+import { CountContext } from '../App/DataProvider.jsx';
 
 export const CameraButton = () => {
+  const { count, setCount } = useContext(CountContext);
   const [picture, setPicture] = useState(false);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -68,10 +70,15 @@ export const CameraButton = () => {
     const result = await processPhotoEden(e.target.files[0]);
     console.log(result);
     setApiData(result.google);
+    // mapIngredients();
     // responseProcessing();
   }, []);
   // [processPhotoEden, setLoading, setApiData]
   // );
+  useEffect(() => {
+    console.log(newIngredientList);
+  }, [newIngredientList]);
+  // const handleClick = () => {};
 
   const handleClick = () => {
     //checking if if received a response - in console log
@@ -79,14 +86,15 @@ export const CameraButton = () => {
 
     //processing response to get the ingredient list
     const result = responseProcessing(apiData);
+    console.log(result);
 
     //DOESNT WORK -> trying to assign processed data/resulting array to a variable
     setNewIngredientList(result);
-    console.log(newIngredientList);
 
     //imported 'api database' from Hana with ingredients description
     console.log(databaseIngredients);
-
+  };
+  const mapIngredients = () => {
     //looking for the ingredients in the ingredients database; counting safe and harmful, creating arrays for safe and harmful to display later
     ingredientList.map((item) => {
       if (databaseIngredients.find((o) => o.name === item)) {
@@ -164,6 +172,7 @@ export const CameraButton = () => {
           >
             Select image
           </button>
+          <button onClick={() => setCount(count + 1)}>Counter {count}</button>
         </>
       )}
     </div>

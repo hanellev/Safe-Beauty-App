@@ -45,5 +45,5 @@ export const responseProcessing = (data) => {
     return newArray;
   };
 
-  addDataToDataset();
+  return addDataToDataset();
 };

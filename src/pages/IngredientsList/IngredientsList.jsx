@@ -1,6 +1,10 @@
 import './IngredientsList.css';
+import { useContext } from 'react';
+import { CountContext } from '../../components/App/DataProvider.jsx';
 
 export const IngredientsList = (data) => {
+  const { count, setCount } = useContext(CountContext);
+
   return (
     <div className="ingredients-container">
       <h2>Ingredients List</h2>
@@ -40,6 +44,7 @@ export const IngredientsList = (data) => {
             <h3>Dangerous Ingredients</h3>
             <p>Amount:</p>
           </div>
+          <button onClick={() => setCount(count + 1)}>Counter {count}</button>
         </div>
       </div>
     </div>
