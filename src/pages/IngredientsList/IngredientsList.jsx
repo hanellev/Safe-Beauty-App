@@ -46,7 +46,7 @@ export const IngredientsList = () => {
               Show list
             </button>
             {showSafe ? (
-              <div className="ingredients__text">
+              <div className="detail-impact">
                 <h5>List of Safe Ingredients:</h5>
                 <div>
                   {safeIngrData.map((item, index) => {
@@ -73,7 +73,7 @@ export const IngredientsList = () => {
             {showDoubt ? (
               <div className="ingredients__text">
                 <h5>List of Potentially harmful Ingredients:</h5>
-                <div>
+                <div className="detail-impact">
                   {doubtIngrData.map((item, index) => {
                     return <span key={index}>{item}, </span>;
                   })}
