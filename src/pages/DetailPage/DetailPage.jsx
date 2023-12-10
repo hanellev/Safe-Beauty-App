@@ -19,16 +19,18 @@ export const DetailPage = () => {
             <div className="detail-info" key={item.id}>
               <h4 className="detail-name">{item.name}</h4>
               <div className="detail-labels">
-                <label className="allergenic">
-                  Allergenic: {item.allergenic ? 'yes' : 'no'}
-                </label>
-                <label className="carcinogenic">
-                  Carcinogenic: {item.carcinogenic ? 'yes' : 'no'}
-                </label>
-                <label className="pregnancy">
-                  Suitable for pregnant woman:{' '}
-                  {item['suitable-for-pregnant-women'] ? 'yes' : 'no'}
-                </label>
+                {item.allergenic ? (
+                  <label className="allergenic">Allergenic</label>
+                ) : null}
+                {item.carcinogenic ? (
+                  <label className="carcinogenic">Carcinogenic</label>
+                ) : null}
+                {item['suitable-for-pregnant-women'] ? (
+                  <label className="pregnancy">
+                    Suitable for pregnant woman
+                  </label>
+                ) : null}
+
                 <p className="detail-impact">{item.impact}</p>
               </div>
             </div>
