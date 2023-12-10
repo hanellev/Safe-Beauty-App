@@ -63,13 +63,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 2rem;
-	flex: 1;
+	justify-content: center;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .error-logo {
 	width: 9rem;
 	height: 9rem;
+	margin-top: 2rem;
 }
 
 .error-text {
@@ -94,4 +96,5 @@
 	text-align: center;
 	text-decoration: none;
 	margin-top: 4rem;
+	margin-bottom: 1rem;
 }
