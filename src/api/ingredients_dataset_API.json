@@ -1,352 +1,658 @@
 [
-  {
-    "id": 0,
-    "name": "para-dioxane",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is classified as a potential carcinogen."
-  },
-  {
-    "id": 1,
-    "name": "diethylendioxid",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is classified as a potential carcinogen."
-  },
-  {
-    "id": 2,
-    "name": "dioxane",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is classified as a potential carcinogen."
-  },
-  {
-    "id": 3,
-    "name": "nitropropan",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "Suitable for pregnant women": false,
-    "impact": "This substance is highly allergenic and also toxic to the environment."
-  },
-  {
-    "id": 4,
-    "name": "bronopol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is highly allergenic and also toxic to the environment."
-  },
-  {
-    "id": 5,
-    "name": "butoxyethanol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 6,
-    "name": "butylcellosolve",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 7,
-    "name": "ethyleneglycol",
-    "allergenic": true,
-    "carcinogenic": false,
-    "Suitable for pregnant women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 8,
-    "name": "monobutyl ether",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 9,
-    "name": "butoxyethanol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 10,
-    "name": "butoxyethanol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 11,
-    "name": "butylglycol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "Suitable for pregnant women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 12,
-    "name": "butoxyethanol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 13,
-    "name": "BEA",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 14,
-    "name": "egbea",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
-  },
-  {
-    "id": 15,
-    "name": "benzylidene camphor",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance causes not only the skin irritation, but it has also toxic effect on the human endocrine system, on which it acts as a hormone disruptor. In addition, 3-benzylidene camphor has been linked to adverse effects on the human fetus, in which it can cause developmental defects. The substance is also considered to be a cancer-causing agent and is mainly associated with female breast, uterine, ovarian carcinogens."
-  },
-  {
-    "id": 16,
-    "name": "cresol",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance has genotoxic potential."
-  },
-  {
-    "id": 17,
-    "name": "methylphenol",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "Suitable for pregnant women": false,
-    "impact": "This substance has genotoxic potential."
-  },
-  {
-    "id": 18,
-    "name": "benzisothiazolinone",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "Suitable for pregnant women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 19,
-    "name": "bit",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 20,
-    "name": "benzisothiazol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 21,
-    "name": "benzoisothiazolin",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 22,
-    "name": "benzoisothiazolin",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 23,
-    "name": "ipx",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 24,
-    "name": "proxan",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 25,
-    "name": "proxel",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 26,
-    "name": "proxel",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 27,
-    "name": "nipakid",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 28,
-    "name": "mergal",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
-  },
-  {
-    "id": 29,
-    "name": "bisfenol",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is a toxic irritant that adversely affects human reproduction. Bisphenol A can mimic the hormone oestrogen, thereby disrupting natural hormone levels and potentially endangering the development of fetuses, babies and children. It affects the brain and heart. Moreover, some studies have shown a link between exposure to BPA and an increased risk of cancer. It has negative effects on the function of the immune system and the human nervous system."
-  },
-  {
-    "id": 30,
-    "name": "bpa",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is a toxic irritant that adversely affects human reproduction. Bisphenol A can mimic the hormone oestrogen, thereby disrupting natural hormone levels and potentially endangering the development of fetuses, babies and children. It affects the brain and heart. Moreover, some studies have shown a link between exposure to BPA and an increased risk of cancer. It has negative effects on the function of the immune system and the human nervous system."
-  },
-  {
-    "id": 31,
-    "name": "bromochlorophene",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "Causes irritation of skin, eyes, mucous membranes and respiratory system."
-  },
-  {
-    "id": 32,
-    "name": "butylphenyl methylpropional",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
-  },
-  {
-    "id": 33,
-    "name": "lilial",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
-  },
-  {
-    "id": 34,
-    "name": "lilial aldehyd",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
-  },
-  {
-    "id": 35,
-    "name": "butylbenzyl methylpropional",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
-  },
-  {
-    "id": 36,
-    "name": "butylbenzyl propionaldehyde",
-    "category": "dangerous",
-    "allergenic": false,
-    "carcinogenic": true,
-    "suitable-for-pregnant-women": false,
-    "impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
-  },
-  {
-    "id": 37,
-    "name": "alcohol",
-    "category": "dangerous",
-    "allergenic": true,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": false,
-    "impact": "Causes dryness, disrupts the surface of the microflora and the skin barrier, increases the risk of premature skin aging. It is important to be careful especially if one has sensitive, dry, or eczema-prone skin. "
-  },
-  {
-    "id": 38,
-    "name": "Xanthan",
-    "category": "potentially dangerous",
-    "allergenic": false,
-    "carcinogenic": false,
-    "suitable-for-pregnant-women": true,
-    "impact": "Dimethicone also forms a protective barrier on the skin, decreasing the loss of moisture and providing some protection from irritants or allergens. Experts consider dimethicone to be a safe ingredient with few to no side effects. However, while it is safe for humans, it has a detrimental effect on the environment"
-  }
+	{
+		"id": 0,
+		"name": "para-dioxane",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is classified as a potential carcinogen."
+	},
+	{
+		"id": 1,
+		"name": "diethylendioxid",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is classified as a potential carcinogen."
+	},
+	{
+		"id": 2,
+		"name": "dioxane",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is classified as a potential carcinogen."
+	},
+	{
+		"id": 3,
+		"name": "nitropropan",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"Suitable for pregnant women": false,
+		"impact": "This substance is highly allergenic and also toxic to the environment."
+	},
+	{
+		"id": 4,
+		"name": "bronopol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is highly allergenic and also toxic to the environment."
+	},
+	{
+		"id": 5,
+		"name": "butoxyethanol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 6,
+		"name": "butylcellosolve",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 7,
+		"name": "ethyleneglycol",
+		"allergenic": true,
+		"carcinogenic": false,
+		"Suitable for pregnant women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 8,
+		"name": "monobutyl ether",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 9,
+		"name": "butoxyethanol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 10,
+		"name": "butoxyethanol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 11,
+		"name": "butylglycol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"Suitable for pregnant women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 12,
+		"name": "butoxyethanol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 13,
+		"name": "BEA",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 14,
+		"name": "egbea",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance may cause pulmonary edema, liver and kidney damage, and exhibits nervous system toxicity.Vomiting, nausea, tremors, anemia, asthmatic or allergic reactions may occur after using a product containing it.Not suitable for pregnant women."
+	},
+	{
+		"id": 15,
+		"name": "benzylidene camphor",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance causes not only the skin irritation, but it has also toxic effect on the human endocrine system, on which it acts as a hormone disruptor. In addition, 3-benzylidene camphor has been linked to adverse effects on the human fetus, in which it can cause developmental defects. The substance is also considered to be a cancer-causing agent and is mainly associated with female breast, uterine, ovarian carcinogens."
+	},
+	{
+		"id": 16,
+		"name": "cresol",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance has genotoxic potential."
+	},
+	{
+		"id": 17,
+		"name": "methylphenol",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"Suitable for pregnant women": false,
+		"impact": "This substance has genotoxic potential."
+	},
+	{
+		"id": 18,
+		"name": "benzisothiazolinone",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"Suitable for pregnant women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 19,
+		"name": "bit",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 20,
+		"name": "benzisothiazol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 21,
+		"name": "benzoisothiazolin",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 22,
+		"name": "benzoisothiazolin",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 23,
+		"name": "ipx",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 24,
+		"name": "proxan",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 25,
+		"name": "proxel",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 26,
+		"name": "proxel",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 27,
+		"name": "nipakid",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 28,
+		"name": "mergal",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "This substance is associated with an ecotoxicological effect. It is reported to be a strong irritant to the eyes, skin, respiratory system, and exhibits toxic activity to non-reproductive organs."
+	},
+	{
+		"id": 29,
+		"name": "bisfenol",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a toxic irritant that adversely affects human reproduction. Bisphenol A can mimic the hormone oestrogen, thereby disrupting natural hormone levels and potentially endangering the development of fetuses, babies and children. It affects the brain and heart. Moreover, some studies have shown a link between exposure to BPA and an increased risk of cancer. It has negative effects on the function of the immune system and the human nervous system."
+	},
+	{
+		"id": 30,
+		"name": "bpa",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a toxic irritant that adversely affects human reproduction. Bisphenol A can mimic the hormone oestrogen, thereby disrupting natural hormone levels and potentially endangering the development of fetuses, babies and children. It affects the brain and heart. Moreover, some studies have shown a link between exposure to BPA and an increased risk of cancer. It has negative effects on the function of the immune system and the human nervous system."
+	},
+	{
+		"id": 31,
+		"name": "bromochlorophene",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "Causes irritation of skin, eyes, mucous membranes and respiratory system."
+	},
+	{
+		"id": 32,
+		"name": "butylphenyl methylpropional",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
+	},
+	{
+		"id": 33,
+		"name": "lilial",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
+	},
+	{
+		"id": 34,
+		"name": "lilial aldehyd",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
+	},
+	{
+		"id": 35,
+		"name": "butylbenzyl methylpropional",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
+	},
+	{
+		"id": 36,
+		"name": "butylbenzyl propionaldehyde",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is highly allergenic, carcinogenic, mutagenic and toxic to reproduction."
+	},
+	{
+		"id": 37,
+		"name": "alcohol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "Causes dryness, disrupts the surface of the microflora and the skin barrier, increases the risk of premature skin aging. It is important to be careful especially if one has sensitive, dry, or eczema-prone skin. "
+	},
+	{
+		"id": 38,
+		"name": "Xanthan",
+		"category": "potentially dangerous",
+		"allergenic": false,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "Dimethicone also forms a protective barrier on the skin, decreasing the loss of moisture and providing some protection from irritants or allergens. Experts consider dimethicone to be a safe ingredient with few to no side effects. However, while it is safe for humans, it has a detrimental effect on the environment"
+	},
+	{
+		"id": 39,
+		"name": "cocamide diethanolamine",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "A major problem associated with the use of Cocamide DEA is that under certain conditions it can form nitrosamines, which has carcinogenic and mutagenic effect."
+	},
+	{
+		"id": 40,
+		"name": "diethamin",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 41,
+		"name": "dea",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 42,
+		"name": "diethanolamine",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 43,
+		"name": "ethanamin",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 44,
+		"name": "n-ethyl",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 45,
+		"name": "ethylethanamin",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 46,
+		"name": "diethylamine",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 47,
+		"name": "ethanamine",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 48,
+		"name": "ethylethanamine",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is a carcinogen, can cause burns, allergic reactions, impairs the liver, kidneys and nervous system, and has an adverse effect on the unborn fetus. It is orally toxic, irritating to the eyes and respiratory system, problematic for the thyroid gland. Affects brain function, can cause tremors, disrupts DNA."
+	},
+	{
+		"id": 49,
+		"name": "imidazolidinyl urea",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": true,
+		"impact": "It has an increased health risk of irritation to the skin, eyes and respiratory system. It is associated with carcinogenicity and is closely involved in allergic reactions, mainly contact dermatitis."
+	},
+	{
+		"id": 50,
+		"name": "ibpc",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "It has been shown to be acutely toxic by inhalation and should therefore not be present in products that can be inhaled or sprayed. It should also not be present in products that are applied to a large part of the skin (e.g. body lotions) or in oral care products. At a concentration of 0,5 % it may be slightly irritating to the skin."
+	},
+	{
+		"id": 51,
+		"name": "iodopropynyl butylcarbamate",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "It has been shown to be acutely toxic by inhalation and should therefore not be present in products that can be inhaled or sprayed. It should also not be present in products that are applied to a large part of the skin (e.g. body lotions) or in oral care products. At a concentration of 0,5 % it may be slightly irritating to the skin."
+	},
+	{
+		"id": 52,
+		"name": "iodopropynyl butyl carbamate",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "It has been shown to be acutely toxic by inhalation and should therefore not be present in products that can be inhaled or sprayed. It should also not be present in products that are applied to a large part of the skin (e.g. body lotions) or in oral care products. At a concentration of 0,5 % it may be slightly irritating to the skin."
+	},
+	{
+		"id": 53,
+		"name": "phthalic acid",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "Phthalates are classified as hormone disruptors. They are associated with damage of male reproductive system and reduced sperm concentration. Phthalates can affect development of uborn fetuses, especially genital organs. Studies also show that children who are exposed to higher concentrations of phthalates (e.g. in plastic toys) are more likely to develop allergies, asthma or eczema. Phthalates can also have negative effects on the liver, kidneys or lungs.."
+	},
+	{
+		"id": 54,
+		"name": "phthalic anhydride",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": false,
+		"impact": "Phthalates are classified as hormone disruptors. They are associated with damage of male reproductive system and reduced sperm concentration. Phthalates can affect development of uborn fetuses, especially genital organs. Studies also show that children who are exposed to higher concentrations of phthalates (e.g. in plastic toys) are more likely to develop allergies, asthma or eczema. Phthalates can also have negative effects on the liver, kidneys or lungs.."
+	},
+	{
+		"id": 55,
+		"name": "lead acetate",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is associated with a risk of mutagenicity and carcinogenicity. It is toxic to organ systems, causes birth defects and genetic mutations, and has been implicated in increasing male and femaile infertility."
+	},
+	{
+		"id": 56,
+		"name": "lead diacetate",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is associated with a risk of mutagenicity and carcinogenicity. It is toxic to organ systems, causes birth defects and genetic mutations, and has been implicated in increasing male and femaile infertility."
+	},
+	{
+		"id": 57,
+		"name": "plumbous acetate",
+		"category": "dangerous",
+		"allergenic": false,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "This substance is associated with a risk of mutagenicity and carcinogenicity. It is toxic to organ systems, causes birth defects and genetic mutations, and has been implicated in increasing male and femaile infertility."
+	},
+	{
+		"id": 58,
+		"name": "lyral",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It interferes with the natural film of the skin and gets into the body. Lyral has been linked to widespread eczema and is among the top 26 allergens."
+	},
+	{
+		"id": 59,
+		"name": "hicc",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It interferes with the natural film of the skin and gets into the body. Lyral has been linked to widespread eczema and is among the top 26 allergens."
+	},
+	{
+		"id": 60,
+		"name": "kovanol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It interferes with the natural film of the skin and gets into the body. Lyral has been linked to widespread eczema and is among the top 26 allergens."
+	},
+	{
+		"id": 61,
+		"name": "mugonal",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It interferes with the natural film of the skin and gets into the body. Lyral has been linked to widespread eczema and is among the top 26 allergens."
+	},
+	{
+		"id": 62,
+		"name": "landolal",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It interferes with the natural film of the skin and gets into the body. Lyral has been linked to widespread eczema and is among the top 26 allergens."
+	},
+	{
+		"id": 63,
+		"name": "methylisothiazolinone",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is considered a very strong contact allergen."
+	},
+	{
+		"id": 64,
+		"name": "mit",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is considered a very strong contact allergen."
+	},
+	{
+		"id": 65,
+		"name": "methylchloroisothiazolinone",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is considered a very strong contact allergen."
+	},
+	{
+		"id": 66,
+		"name": "cmit",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is considered a very strong contact allergen."
+	},
+	{
+		"id": 67,
+		"name": "neomycin sulfate",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is a substance that provokes skin allergies, contact dermatitis and itching of the skin. It may cause kidney damage, asthma attacks and respiratory problems."
+	},
+	{
+		"id": 68,
+		"name": "framycetin",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is a substance that provokes skin allergies, contact dermatitis and itching of the skin. It may cause kidney damage, asthma attacks and respiratory problems."
+	},
+	{
+		"id": 69,
+		"name": "biosol",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is a substance that provokes skin allergies, contact dermatitis and itching of the skin. It may cause kidney damage, asthma attacks and respiratory problems."
+	},
+	{
+		"id": 70,
+		"name": "neloate",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is a substance that provokes skin allergies, contact dermatitis and itching of the skin. It may cause kidney damage, asthma attacks and respiratory problems."
+	},
+	{
+		"id": 71,
+		"name": "neamine",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": false,
+		"suitable-for-pregnant-women": true,
+		"impact": "It is a substance that provokes skin allergies, contact dermatitis and itching of the skin. It may cause kidney damage, asthma attacks and respiratory problems."
+	},
+	{
+		"id": 72,
+		"name": "triclosan",
+		"category": "dangerous",
+		"allergenic": true,
+		"carcinogenic": true,
+		"suitable-for-pregnant-women": false,
+		"impact": "It destroys the natural microflora of the skin, disrupts the body's genetic material, endocrine system and hormonal system. It thus causes changes in hormonal system and may cause infertility, sexual dysfunction, thyroid dysfunction, weight gain. It contaminates breast milk and can lead to fetal degeneration. It can promote the development of congenital, genetic defects. It aggravates allergic conditions and is itself a trigger for allergic reactions, especially by contact."
+	}
 ]
