@@ -1,8 +1,10 @@
 # Safe Beauty
 
-Safe Beauty is a project developed to help users orient themselves in the complicated world of cosmetic products' ingredients. With the help of this simple app users can check if there are any dangerous or potentially harmful ingredients inside and make sure they make informed decisions!
+Safe Beauty is a project developed to help users orient themselves in the complicated world of cosmetic products' ingredients. With the help of this simple app users can check if there are any dangerous or potentially harmful ingredients inside!
 
-Available at https://safe-beauty.vercel.app
+We use OCR (Optical Character Recognition) technology powered by GoogleAI and our own database of dangerous ingredients to help every user make informed decisions and stay healthy. 
+
+Service available at https://safe-beauty.vercel.app
 
 ## Getting Started
 
