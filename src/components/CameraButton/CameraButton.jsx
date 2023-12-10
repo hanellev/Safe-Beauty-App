@@ -4,127 +4,150 @@ import { useNavigate } from 'react-router-dom';
 import { processPhotoEden } from '../../api/edenAi.js';
 import { CountContext } from '../App/DataProvider.jsx';
 import { responseProcessing } from '../../api/google_response_processing.jsx';
-responseProcessing;
+import { useMapResultsApi } from '../utils/utils.js';
 import data from '../../api/ingredients_dataset_API.json';
 // import { mapIngredients } from '../../api/ingredients_mapping.jsx';
 
 const CameraButton = () => {
-  const {
-    apiData,
-    setApiData,
-    safeCount,
-    setSafeCount,
-    doubtCount,
-    setDoubtCount,
-    harmfulCount,
-    setHarmfulCount,
-    safeIngrData,
-    doubtIngrData,
-    harmfulIngrData,
-  } = useContext(CountContext);
-  const [loading, setLoading] = useState(false);
-  const [viewResults, setViewResults] = useState(false);
-  const navigate = useNavigate();
+	const {
+		apiData,
+		setApiData,
+		safeCount,
+		setSafeCount,
+		doubtCount,
+		setDoubtCount,
+		harmfulCount,
+		setHarmfulCount,
+		safeIngrData,
+		doubtIngrData,
+		harmfulIngrData,
+	} = useContext(CountContext);
+	const [loading, setLoading] = useState(false);
+	const [viewResults, setViewResults] = useState(false);
+	const navigate = useNavigate();
 
-  const [resultApi, setResultApi] = useState([]);
+	const [resultApi, setResultApi] = useState([]);
+	const mapResultsApi = useMapResultsApi();
 
-  //sending data to API, receiving response, displaying Loading page
-  const handleChange = useCallback(async (e) => {
-    setLoading(true);
-    const result = await processPhotoEden(e.target.files[0]);
-    setApiData(result.google);
-    console.log('handlechange -->', result);
-  }, []);
+	//sending data to API, receiving response, displaying Loading page
+	const handleChange = useCallback(async (e) => {
+		setLoading(true);
+		const result = await processPhotoEden(e.target.files[0]);
 
-  const redirectToIngrPage = () => {
-    navigate('/IngredientsList');
-  };
+		mapResultsApi(responseProcessing(result.google), resultApi, setViewResults);
+		setViewResults(!viewResults)
+		console.log('handlechange -->', result);
+	}, []);
 
-  // useEffect(() => {
-  //   let timer;
+	const redirectToIngrPage = () => {
+		navigate('/IngredientsList');
+	};
 
-  //   if (viewResults) {
-  //     // setLoading(true);
+	// useEffect(() => {
+	//   let timer;
 
-  //     timer = setTimeout(() => {
-  //       return (
-  //         <button className="upload-button" onClick={redirectToIngrPage}>
-  //           View results
-  //         </button>
-  //       );
-  //     }, 8000);
-  //   }
+	//   if (viewResults) {
+	//     // setLoading(true);
 
-  //return () => clearTimeout(timer);
-  // }, [loading]);
+	//     timer = setTimeout(() => {
+	//       return (
+	//         <button className="upload-button" onClick={redirectToIngrPage}>
+	//           View results
+	//         </button>
+	//       );
+	//     }, 8000);
+	//   }
 
-  //processing API data once we have it
-  useEffect(() => {
-    console.log('useEffect API processing -->', apiData);
+	//return () => clearTimeout(timer);
+	// }, [loading]);
 
-    setResultApi(responseProcessing(apiData));
-  }, [apiData]);
+	//processing API data once we have it
+	// useEffect(() => {
+	// 	console.log('useEffect API processing -->', apiData);
 
-  //looking for the ingredients in the ingredients database; counting safe and harmful, creating arrays for safe and harmful to display later
-  useEffect(() => {
-    console.log('useEffect result API -->', resultApi);
-    // would be better to have it in a different file in the api folder, but it falls outside of the context perimeter ??
+	// 	setResultApi(responseProcessing(apiData));
+	// }, [apiData]);
 
-    //importing database of dangerous products
-    const databaseIngredients = data;
+	// const mapResultsApi = (resultApi) => {
+	// 	const databaseIngredients = data;
 
-    //looking for the ingredients in the ingredients database; counting safe and harmful, creating arrays for safe and harmful to display later
-    resultApi.map((item) => {
-      if (databaseIngredients.find((o) => o.name === item)) {
-        setHarmfulCount((harmfulCount) => harmfulCount + 1);
-        harmfulIngrData.push(databaseIngredients.find((o) => o.name === item));
-      } else if (databaseIngredients.find((o) => o.name.includes(item))) {
-        setDoubtCount((doubtCount) => doubtCount + 1);
-        doubtIngrData.push(item);
-      } else {
-        setSafeCount((safeCount) => safeCount + 1);
-        safeIngrData.push(item);
-      }
-    });
+	// 	resultApi.map((item) => {
+	// 		if (databaseIngredients.find((o) => o.name === item)) {
+	// 			setHarmfulCount((harmfulCount) => harmfulCount + 1);
+	// 			harmfulIngrData.push(databaseIngredients.find((o) => o.name === item));
+	// 		} else if (databaseIngredients.find((o) => o.name.includes(item))) {
+	// 			setDoubtCount((doubtCount) => doubtCount + 1);
+	// 			doubtIngrData.push(item);
+	// 		} else {
+	// 			setSafeCount((safeCount) => safeCount + 1);
+	// 			safeIngrData.push(item);
+	// 		}
+	// 	});
 
-    setViewResults(!viewResults);
-  }, [resultApi]);
+	// 	setViewResults(!viewResults);
+	// };
 
-  return (
-    <div className="button-container">
-      {loading ? (
-        <>
-          {viewResults ? (
-            <button className="upload-button" onClick={redirectToIngrPage}>
-              View results
-            </button>
-          ) : (
-            <p>Loading...</p>
-          )}
-        </>
-      ) : (
-        <>
-          <input
-            type="file"
-            onChange={handleChange}
-            className="upload"
-            style={{ display: 'none' }}
-          />
-          <button
-            role="img"
-            aria-label="logo-cream-jar"
-            className="take-a-pict"
-          ></button>
-          <button
-            className="upload-button"
-            onClick={() => document.querySelector('.upload').click()}
-          >
-            Select image
-          </button>
-        </>
-      )}
-    </div>
-  );
+	// looking for the ingredients in the ingredients database; counting safe and harmful, creating arrays for safe and harmful to display later
+	// useEffect(() => {
+	// 	console.log('useEffect result API -->', resultApi);
+	// 	// would be better to have it in a different file in the api folder, but it falls outside of the context perimeter ??
+
+	// 	//importing database of dangerous products
+	// 	const databaseIngredients = data;
+
+	// 	//looking for the ingredients in the ingredients database; counting safe and harmful, creating arrays for safe and harmful to display later
+	// 	resultApi.map((item) => {
+	// 		if (databaseIngredients.find((o) => o.name === item)) {
+	// 			setHarmfulCount((harmfulCount) => harmfulCount + 1);
+	// 			harmfulIngrData.push(databaseIngredients.find((o) => o.name === item));
+	// 		} else if (databaseIngredients.find((o) => o.name.includes(item))) {
+	// 			setDoubtCount((doubtCount) => doubtCount + 1);
+	// 			doubtIngrData.push(item);
+	// 		} else {
+	// 			setSafeCount((safeCount) => safeCount + 1);
+	// 			safeIngrData.push(item);
+	// 		}
+	// 	});
+
+	// 	setViewResults(!viewResults);
+	// }, [resultApi]);
+
+	return (
+		<div className="button-container">
+			{loading ? (
+				<>
+					{viewResults ? (
+						<button className="upload-button" onClick={redirectToIngrPage}>
+							View results
+						</button>
+					) : (
+						<p>Loading...</p>
+					)}
+				</>
+			) : (
+				<>
+					<input
+						type="file"
+						onChange={handleChange}
+						className="upload"
+						style={{ display: 'none' }}
+					/>
+					<button
+						role="img"
+						aria-label="logo-cream-jar"
+						className="take-a-pict"
+						onClick={() => document.querySelector('.upload').click()}
+					></button>
+					<button
+						className="upload-button"
+						onClick={() => document.querySelector('.upload').click()}
+					>
+						Select image
+					</button>
+				</>
+			)}
+		</div>
+	);
 };
 
 export default CameraButton;
