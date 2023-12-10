@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import { CountContext } from '../../components/App/DataProvider';
 
 export const DetailPage = () => {
-
   const { safeIngrData, doubtIngrData, harmfulIngrData } =
     useContext(CountContext);
   return (
@@ -20,12 +19,16 @@ export const DetailPage = () => {
             <div className="detail-info" key={item.id}>
               <h4 className="detail-name">{item.name}</h4>
               <div className="detail-labels">
-                <label className="allergenic">Allergenic: {item.allergenic ? 'yes' : 'no'}</label>
-                <label className="carcinogenic">Carcinogenic: {item.carcinogenic ? 'yes' : 'no'}</label>
+                <label className="allergenic">
+                  Allergenic: {item.allergenic ? 'yes' : 'no'}
+                </label>
+                <label className="carcinogenic">
+                  Carcinogenic: {item.carcinogenic ? 'yes' : 'no'}
+                </label>
                 <label className="pregnancy">
                   Suitable for pregnant woman:{' '}
-                  {item['suitable-for-pregnant-women'] ? 'yes' : 'no'}</label>
-                <dt>Impact:</dt>
+                  {item['suitable-for-pregnant-women'] ? 'yes' : 'no'}
+                </label>
                 <p className="detail-impact">{item.impact}</p>
               </div>
             </div>
