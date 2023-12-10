@@ -10,7 +10,7 @@
 .error-logo {
 	width: 15rem;
 	height: 15rem;
-	background-image: url(images/cream-logo.png);
+	background-image: url(/images/cream-logo.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
