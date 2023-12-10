@@ -68,13 +68,8 @@
 }
 
 .error-logo {
-	width: 7rem;
-	height: 7rem;
-	background-image: url(/images/cream-logo.png);
-	background-size: contain;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	border: none;
+	width: 9rem;
+	height: 9rem;
 }
 
 .error-text {
@@ -86,7 +81,7 @@
 	font-size: 4rem;
 	color: #181818;
 	text-align: center;
-	margin-top: 1rem;
+	margin-top: 2rem;
 }
 
 .error-button {
@@ -98,5 +93,5 @@
 	padding: 0.9rem 2rem;
 	text-align: center;
 	text-decoration: none;
-	margin-top: 3rem;
+	margin-top: 4rem;
 }

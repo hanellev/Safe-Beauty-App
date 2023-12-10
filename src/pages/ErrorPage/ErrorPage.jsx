@@ -10,7 +10,11 @@ export const ErrorPage = () => {
 
 	return (
 		<div className="error-container">
-			<span role="img" aria-label="logo-cream-jar" className="error-logo" />
+			<img
+				className="error-logo"
+				src="/images/cream-logo.png"
+				alt="Cream jar icon"
+			/>
 			<div className="error-text">
 				<h2 id="error-heading">404</h2>
 				<p>This is not the page you are looking for.</p>
