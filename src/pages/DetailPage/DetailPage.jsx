@@ -3,8 +3,7 @@ import { useContext } from 'react';
 import { CountContext } from '../../components/App/DataProvider';
 
 export const DetailPage = () => {
-  const { safeIngrData, doubtIngrData, harmfulIngrData } =
-    useContext(CountContext);
+  const { harmfulIngrData } = useContext(CountContext);
   return (
     <>
       <div className="detail-page-container" id="danger">

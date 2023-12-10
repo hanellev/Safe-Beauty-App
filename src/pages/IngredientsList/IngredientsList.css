@@ -47,3 +47,8 @@
 	text-align: center;
 	text-decoration: none;
 }
+
+.detail-list {
+	text-align: justify;
+	font-size: 0.7rem;
+}

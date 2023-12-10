@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 function getUri(file) {
   const blob = new Blob([file], { type: 'image/jpeg' });
-  console.log(URL.createObjectURL(blob));
   return URL.createObjectURL(blob);
 }
 

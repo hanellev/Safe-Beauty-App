@@ -45,18 +45,18 @@ export const IngredientsList = () => {
             <button className="ingredients-button" onClick={safeDetails}>
               Show list
             </button>
-            {showSafe ? (
-              <div className="detail-impact">
-                <h5>List of Safe Ingredients:</h5>
-                <div>
-                  {safeIngrData.map((item, index) => {
-                    return <span key={index}>{item}, </span>;
-                  })}
-                </div>
-              </div>
-            ) : null}
           </div>
         </div>
+        {showSafe ? (
+          <div className="detail-impact">
+            <h5>List of Safe Ingredients:</h5>
+            <div className="detail-list">
+              {safeIngrData.map((item, index) => {
+                return <span key={index}>{item}, </span>;
+              })}
+            </div>
+          </div>
+        ) : null}
 
         <div className="ingredients__category">
           <img
@@ -70,18 +70,18 @@ export const IngredientsList = () => {
             <button className="ingredients-button" onClick={harmfulDetails}>
               Show list
             </button>
-            {showDoubt ? (
-              <div className="ingredients__text">
-                <h5>List of Potentially harmful Ingredients:</h5>
-                <div className="detail-impact">
-                  {doubtIngrData.map((item, index) => {
-                    return <span key={index}>{item}, </span>;
-                  })}
-                </div>
-              </div>
-            ) : null}
           </div>
         </div>
+        {showDoubt ? (
+          <div className="detail-impact">
+            <h5>List of Potentially harmful Ingredients:</h5>
+            <div className="detail-impact">
+              {doubtIngrData.map((item, index) => {
+                return <span key={index}>{item}; </span>;
+              })}
+            </div>
+          </div>
+        ) : null}
 
         <div className="ingredients__category">
           <img
