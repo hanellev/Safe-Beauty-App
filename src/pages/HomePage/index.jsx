@@ -4,11 +4,11 @@ import { Footer } from '/components/Footer/Footer.jsx';
 import CameraButton from '/components/CameraButton/CameraButton.jsx';
 
 export const HomePage = () => {
-	return (
-		<div className="home-container">
-			<Header />
-			<CameraButton />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="home-container">
+      <Header />
+      <CameraButton />
+      <Footer />
+    </div>
+  );
 };

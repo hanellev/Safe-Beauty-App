@@ -1,28 +1,37 @@
 import './DetailPage.css';
+import { useContext } from 'react';
+import { CountContext } from '../../components/App/DataProvider';
 
 export const DetailPage = () => {
-	return (
-		<div className="detail-page-container">
-			<img
-				className="detail-icon"
-				src="./images/cream-red.png"
-				alt="Red cream jar icon"
-			/>
-			<h2 className="detail-heading">Dangerous Ingredients</h2>
-			<div className="detail-info">
-				<h4 className="detail-name">para-dioxane</h4>
-				<div className="detail-labels">
-					<label className="allergenic">Allergenic</label>
-					<label className="carcinogenic">Carcinogenic</label>
-					<label className="pregnancy">In pregnancy</label>
-				</div>
-				<p className="detail-impact">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem neque
-					laudantium, rerum facilis natus exercitationem recusandae corrupti
-					magnam tenetur illum aspernatur. Hic quaerat quisquam labore ducimus,
-					consequuntur unde quidem similique.
-				</p>
-			</div>
-		</div>
-	);
+
+  const { safeIngrData, doubtIngrData, harmfulIngrData } =
+    useContext(CountContext);
+  return (
+    <>
+      <div className="detail-page-container" id="danger">
+        <img
+          className="detail-icon"
+          src="./images/cream-red.png"
+          alt="Red cream jar icon"
+        />
+        <h2 className="detail-heading">Dangerous Ingredients</h2>
+        {harmfulIngrData.map((item) => {
+          return (
+            <div className="detail-info" key={item.id}>
+              <h4 className="detail-name">{item.name}</h4>
+              <div className="detail-labels">
+                <label className="allergenic">Allergenic: {item.allergenic ? 'yes' : 'no'}</label>
+                <label className="carcinogenic">Carcinogenic: {item.carcinogenic ? 'yes' : 'no'}</label>
+                <label className="pregnancy">
+                  Suitable for pregnant woman:{' '}
+                  {item['suitable-for-pregnant-women'] ? 'yes' : 'no'}</label>
+                <dt>Impact:</dt>
+                <p className="detail-impact">{item.impact}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
 };
