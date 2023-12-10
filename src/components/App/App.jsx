@@ -3,8 +3,8 @@ import { Outlet, NavLink, useLocation } from 'react-router-dom';
 import { DataProvider } from './DataProvider';
 
 export const App = () => {
-  const location = useLocation();
-  const hideNavBarOnHome = location.pathname === '/';
+	const location = useLocation();
+	// const hideNavBarOnHome = location.pathname === '/';
 
   // Funkce, která určuje, zda je daná cesta aktivní
   const isActive = (path) => location.pathname === path;
@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <DataProvider>
       <div className="app-container">
-        {!hideNavBarOnHome && (
+        {/* {!hideNavBarOnHome && ( */}
           <nav>
             <NavLink to="/" className={isActive('/') ? 'active' : 'normal'}>
               Home
@@ -32,9 +32,8 @@ export const App = () => {
               Detail
             </NavLink>
           </nav>
-        )}
+        {/* )} */}
         <Outlet />
       </div>
     </DataProvider>
   );
-};
